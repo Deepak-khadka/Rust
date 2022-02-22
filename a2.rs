@@ -1,21 +1,26 @@
-// Mathematical operation 
+// Topic: Basic arithmetic
+//
+// Program requirements:
+// * Display the result of the sum of two numbers
+//
+// Notes:
+// * Use a function to add two numbers together
+// * Use a function to display the result
+// * Use the "{:?}" token in the println macro to display the result
 
-// Subtraction which take integer of 32 input and
-// return integer of 32 bit
-fn sub(a: i32, b: i32) -> i32 {
-   a - b;
+// *Use a function to add tow numbers together
+
+fn sum(a: i32, b: i32)-> i32{
+    a + b
+}
+
+// * Use a function to display the result
+fn display_result(result: i32) {
+    // * Use the "{:?}" token in the println macro to display the result
+    println!("The sum of two number is : {:?}", result);
 }
 
 fn main() {
-    let sum = 2 + 3;
-    let value = 10 - 35;
-    let division = 10 / 2;
-    let mult = 5 * 5;
-
-    let five = sub(8, 3);
-
-    let rem = 6 % 3;
-
-    let rem2 = 6 % 4;
-    
+    let result = sum(3, 5);
+    display_result(result);
 }
